@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Deletar Produto</mat-card-title>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Nome do produto:</mat-label>
+        <input matInput placeholder="Exp: Córtex" [(ngModel)]="product.name" name="name" disabled>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Preço (R$):</mat-label>
+        <input matInput placeholder="Exp: 120.00" [(ngModel)]="product.price" name="price" disabled>
+    </mat-form-field>
+
+    <div class="example-button-row">
+        <button color="warn" mat-button (click)="deletarProduct(product.id)">Deletar</button>
+        <button mat-button color="primary" (click)="cancel()">Cancelar</button>
+    </div>
+</mat-card>

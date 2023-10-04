@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-title>Cadastro empresa</mat-card-title>
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <!-- MATRIZ/FILIAL -->
+        <mat-form-field appearance="outline">
+            <mat-label>Matriz/Filial:</mat-label>
+            <mat-select [(ngModel)]="empresa.matrizFilial" required>
+                <mat-option value="Matriz">Matriz</mat-option>
+                <mat-option value="Filial">Filial</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-grid-list>
+
+    <!-- IP -->
+    <mat-form-field appearance="outline">
+        <mat-label>Razão social:</mat-label>
+        <input [(ngModel)]="empresa.razao" matInput name="razao" required>
+    </mat-form-field>
+    <!-- HABILITAR -->
+
+
+    <section class="example-section">
+        <mat-slide-toggle class="example-margin" [checked]="checked" [disabled]="disabled" color="primary" >
+            Online:
+        </mat-slide-toggle>
+    </section>
+
+
+    <!-- <mat-slide-toggle style="padding-bottom: 5px;" [(ngModel)]="empresa.status" checked="false" name="enableWifi">Habilitar conta</mat-slide-toggle> -->
+    <!-- [(ngModel)]="empresa.status" -->
+    <!-- SALVAR/CANCELAR -->
+    <div class="example-button-row">
+        <button color="warn" (click)="cadastrar()" required mat-button>Salvar</button>
+        <button mat-button color="primary" routerLink="/clientes">Cancelar</button>
+    </div>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</mat-card>

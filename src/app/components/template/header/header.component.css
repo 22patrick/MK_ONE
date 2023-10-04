@@ -1,0 +1,35 @@
+.header {
+    align-items: center;
+    background-color: #581c87;
+    height: 43px;
+}
+
+.header a {
+    align-items: center;
+    text-decoration: none;
+}
+
+.material-icons i{
+    width: 100px;
+}
+
+.header .logo {
+    margin-top: 5px;
+    max-height: 30px;
+    max-width: 160px;
+}
+
+.header .title-group i {
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+    padding-left: 25px;
+}
+.header .title-group a{
+    font-size: 15px;
+    color: white;
+}
+
+.header .title-group {
+    padding-right: 5px;
+}

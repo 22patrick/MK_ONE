@@ -1,0 +1,50 @@
+<mat-card>
+    <mat-card-title>Alterar equipamento</mat-card-title>
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <!-- EMPRESA -->
+        <mat-form-field>
+            <mat-label>Empresa:</mat-label>
+            <mat-select [(ngModel)]="equipamento.empresa">
+                <mat-option *ngFor="let aqui of empresas" value="{{aqui.razao}}">{{aqui.razao}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- MATRIZ/FILIAL -->
+        <mat-form-field>
+            <mat-label>Matriz/Filial:</mat-label>
+            <mat-select [(ngModel)]="equipamento.matrizFilial">
+                <mat-option value="Matriz">Matriz</mat-option>
+                <mat-option value="Filial">Filial</mat-option>
+            </mat-select>
+            <!-- MODELO -->
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Modelo:</mat-label>
+            <mat-select [(ngModel)]="equipamento.modelo">
+                <mat-option value="rb750">RB 750</mat-option>
+                <mat-option value="RB Ccr10097">RB Ccr10097</mat-option>
+                <mat-option value="rb3011">RB 3011</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-grid-list>
+
+    <!-- IP -->
+    <mat-form-field appearance="outline">
+        <mat-label>Ip:</mat-label>
+        <input [(ngModel)]="equipamento.ip" matInput placeholder="Ip Mikrotik" name="ip">
+    </mat-form-field>
+    <!-- USUARIO -->
+    <mat-form-field appearance="outline">
+        <mat-label>Usuário:</mat-label>
+        <input [(ngModel)]="equipamento.usuario" matInput placeholder="Admin" name="usuario">
+    </mat-form-field>
+    <!-- SENHA -->
+    <mat-form-field appearance="outline">
+        <mat-label>Senha:</mat-label>
+        <input [(ngModel)]="equipamento.senha" matInput type="password" placeholder="Invi.5040" name="senha">
+    </mat-form-field>
+    <!-- SALVAR/CANCELAR -->
+    <div class="example-button-row">
+        <button color="warn" (click)="alterarProduct()" mat-button>Salvar</button>
+        <button mat-button color="primary" routerLink="/equipamento">Cancelar</button>
+    </div>
+</mat-card>

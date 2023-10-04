@@ -1,0 +1,52 @@
+<button mat-button color="primary" routerLink="/clientes/create" matTooltip="Cadastrar Empresa"><i
+        class="material-icons">add</i>Empresas</button>
+
+
+<section class="example-container mat-elevation-z8" tabindex="0">
+    <table mat-table [dataSource]="empresas">
+
+        <!-- edit Column -->
+        <ng-container matColumnDef="edit">
+            <th mat-header-cell *matHeaderCellDef> Alt: </th>
+            <td mat-cell *matCellDef="let element">
+                <a routerLink="/clientes/update/{{element.id}}" class="edite">
+                    <i class="material-icons" matTooltip="Editar">edit_note</i>
+                </a>
+            </td>
+        </ng-container>
+
+        <!-- Ip Column -->
+        <ng-container matColumnDef="razao">
+            <th mat-header-cell *matHeaderCellDef> Razão: </th>
+            <td mat-cell *matCellDef="let element"> {{element.razao}} </td>
+        </ng-container>
+
+        <!--  matrizfilial Column -->
+        <ng-container matColumnDef="matrizfilial">
+            <th mat-header-cell *matHeaderCellDef> Matriz/Filial: </th>
+            <td mat-cell *matCellDef="let element"> {{element.matrizFilial}} </td>
+        </ng-container>
+
+        <!-- status Column -->
+        <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status: </th>
+            <td mat-cell *matCellDef="let element">{{element.status}}</td>
+        </ng-container>
+
+        <!-- delete Column -->
+        <ng-container matColumnDef="delete">
+            <th mat-header-cell *matHeaderCellDef> Delete: </th>
+            <td mat-cell *matCellDef="let element">
+                <a routerLink="/clientes/delete/{{element.id}}" class="delete">
+                    <i class="material-icons" matTooltip="Deletar">delete</i>
+                </a>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"
+            style="background-color: #f5f5f4; height: 25px;"></tr>
+        <!-- sticky: true"  ==  serve para deixar o header fixo -->
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" style="margin: 0px; padding: 0px; height: 10px;">
+        </tr>
+    </table>
+</section>

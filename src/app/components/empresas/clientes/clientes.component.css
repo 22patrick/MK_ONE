@@ -1,0 +1,36 @@
+i {
+    margin-right: 5px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+
+td {
+    font-family: "Times New Roman", Times, serif;
+}
+
+th {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.example-container {
+    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.edite>i {
+    color: rgb(190, 209, 245);
+}
+
+.delete>i {
+    color: rgba(179, 9, 9, 0.554);
+}
+
+img {
+    width: 30px;
+
+}

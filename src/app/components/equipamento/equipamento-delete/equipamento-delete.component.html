@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Deletar Equipamento</mat-card-title>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Empresa:</mat-label>
+        <input matInput [(ngModel)]="deletarEquipamentos.empresa"  name="empresa" disabled>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Matriz/Filial:</mat-label>
+        <input matInput [(ngModel)]="deletarEquipamentos.matrizFilial"  name="matrizFilial" disabled>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Ip:</mat-label>
+        <input matInput [(ngModel)]="deletarEquipamentos.ip"  name="ip" disabled>
+    </mat-form-field>
+
+    <div class="example-button-row">
+        <button color="warn" mat-button (click)="deletar()">Deletar</button>
+        <button mat-button color="primary" (click)="cancel()">Cancelar</button>
+    </div>
+</mat-card>

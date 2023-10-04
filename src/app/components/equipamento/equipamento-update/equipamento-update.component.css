@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+}
+
+button {
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 10px 10px 10px;
+}
+
+mat-card {
+    margin-top: 5px;
+    border-radius: 8px;
+
+}
+
+mat-option {
+    font-family: "Times New Roman", Times, serif;
+}
+
+mat-card-title {
+    color: #581c87;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 10px 20px 10px;
+}
+
+mat-form-field {
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 10px 0px 10px;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    height: 45px !important;
+    margin-top: -8px !important;
+}
+
+::ng-deep .mat-mdc-form-field-flex {
+    margin-top: -7px !important;
+}

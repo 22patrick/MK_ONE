@@ -1,0 +1,64 @@
+<mat-card>
+
+    <mat-card-title>Novo equipamento</mat-card-title>
+    <mat-grid-list cols="2" rowHeight="2:1" >
+        <!-- EMPRESA -->
+        <mat-form-field class="selecionar" appearance="outline">
+            <mat-label>Empresa:</mat-label>
+            <mat-select [(ngModel)]="equipamento.empresa" required>
+                <mat-option *ngFor="let aqui of empresas" value="{{aqui.razao}}">{{aqui.razao}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- MATRIZ/FILIAL -->
+        <mat-form-field appearance="outline">
+            <mat-label>Matriz/Filial:</mat-label>
+            <mat-select [(ngModel)]="equipamento.matrizFilial" required>
+                <mat-option value="Matriz">Matriz</mat-option>
+                <mat-option value="Filial">Filial</mat-option>
+            </mat-select>
+            <!-- MODELO -->
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Modelo:</mat-label>
+            <mat-select [(ngModel)]="equipamento.modelo" required>
+                <mat-option value="rb750">RB 750</mat-option>
+                <mat-option value="RB Ccr10097">RB Ccr10097</mat-option>
+                <mat-option value="rb3011">RB 3011</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </mat-grid-list>
+
+    <!-- IP -->
+    <mat-form-field appearance="outline">
+        <mat-label>Ip:</mat-label>
+        <input [(ngModel)]="equipamento.ip" matInput placeholder="Ip Mikrotik" name="ip" required>
+    </mat-form-field>
+    <!-- USUARIO -->
+    <mat-form-field appearance="outline">
+        <mat-label>Usuário:</mat-label>
+        <input [(ngModel)]="equipamento.usuario" matInput placeholder="Admin" name="usuario" required>
+    </mat-form-field>
+    <!-- SENHA -->
+
+    <mat-form-field appearance="outline">
+        <mat-label>Senha:</mat-label>
+        <input [(ngModel)]="equipamento.senha" matInput [type]="hide ? 'password' : 'text'" name="senha" required>
+
+        <button class="button-pass" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon  class="material-icons"> {{hide ? 'visibility_off' :
+                'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+
+    <!-- SALVAR/CANCELAR -->
+    <div class="example-button-row">
+        <button color="warn" (click)="cadastrar()" required mat-button>Salvar</button>
+        <button mat-button color="primary" routerLink="/equipamento">Cancelar</button>
+    </div>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</mat-card>

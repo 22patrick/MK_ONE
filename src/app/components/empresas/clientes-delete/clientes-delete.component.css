@@ -1,0 +1,29 @@
+*{
+    font-family: "Times New Roman", Times, serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+}
+
+mat-card-title {
+    color: #581c87;
+    font-family: "Times New Roman", Times, serif;
+    margin: 10px 10px 20px 10px;
+}
+
+button {
+    margin: 10px 10px 10px 10px;
+}
+
+mat-card {
+    margin-top: 10px;
+    border-radius: 8px;
+
+}
+
+
+mat-form-field {
+    margin: 0px 10px 0px 10px;
+}
