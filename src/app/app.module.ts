@@ -30,6 +30,7 @@ import { ProductReadComponent } from './components/product/product-read/product-
 
 
 import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -78,7 +79,6 @@ registerLocaleData(localePt)
     ClientesCreateComponent,
     EquipamentoDeleteComponent,
     EquipamentoUpdateComponent,
-    EquipamentoCreateComponent,
     ClientesDeleteComponent,
     ClientesUpdateComponent
 
@@ -105,9 +105,11 @@ registerLocaleData(localePt)
     MatGridListModule,
     MatExpansionModule,
     MatIconModule,
-    FormsModule,
     MatRadioModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatTabsModule
+
+
   ],
   providers: [{
     provide: LOCALE_ID,

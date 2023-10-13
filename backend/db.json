@@ -1,0 +1,177 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "description": "Caneta azul, azul caneta ",
+      "price": 5.89,
+      "available": false
+    },
+    {
+      "id": 1,
+      "name": "Jaleco",
+      "description": "Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+      "price": 5.89,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Avental",
+      "description": "Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+      "price": 5.89,
+      "available": false
+    },
+    {
+      "id": 3,
+      "name": "Touca",
+      "description": "Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+      "price": 5.89,
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Embalagem",
+      "description": "Jaleco de alta qualidade fabricado para atender aos clientes mais exigentes",
+      "price": 5.89,
+      "available": true
+    },
+    {
+      "name": "Cubo magico",
+      "price": "120",
+      "id": 6
+    },
+    {
+      "name": "mouse",
+      "price": "1.20",
+      "id": 7
+    },
+    {
+      "name": "Meu zovo",
+      "price": "14",
+      "id": 8
+    }
+  ],
+  "equipamentos": [
+    {
+      "id": 1,
+      "empresa": "Inviolável Maringá",
+      "matrizFilial": "Matriz",
+      "ip": "192.168.190.1",
+      "usuario": "admin",
+      "senha": "invi.5040",
+      "status": "Online",
+      "imagem": "/assets/img/Ccr10097g1c1s.png",
+      "modelo": "RB Ccr10097"
+    },
+    {
+      "id": 2,
+      "empresa": "One Support",
+      "matrizFilial": "Filial",
+      "modelo": "rb750",
+      "imagem": "/assets/img/rb750.png",
+      "ip": "192.168.1.11",
+      "usuario": "admin",
+      "senha": "oneone"
+    },
+    {
+      "id": 3,
+      "empresa": "Allow",
+      "matrizFilial": "Matriz",
+      "modelo": "rb3011",
+      "imagem": "/assets/img/rb3011.png",
+      "ip": "192.168.117.1",
+      "usuario": "admin",
+      "senha": "allow.5040"
+    },
+    {
+      "id": 4,
+      "empresa": "Inviolável Sarandi",
+      "matrizFilial": "Filial",
+      "modelo": "RB Ccr10097",
+      "imagem": "/assets/img/Ccr10097g1c1s.png",
+      "ip": "190.190.190.1",
+      "usuario": "bandido",
+      "senha": "corredapolicia"
+    },
+    {
+      "id": 5,
+      "empresa": "Inviolável Sinop",
+      "matrizFilial": "Matriz",
+      "modelo": "rb750",
+      "imagem": "/assets/img/rb750.png",
+      "ip": "192.168.0.188",
+      "usuario": "admin",
+      "senha": "one1837@2"
+    },
+    {
+      "id": 6,
+      "empresa": "Inviolável Sinop",
+      "matrizFilial": "Matriz",
+      "modelo": "RB Ccr10097",
+      "imagem": "/assets/img/Ccr10097g1c1s.png",
+      "ip": "192.168.0.190",
+      "usuario": "admin",
+      "senha": "one.5040@2"
+    },
+    {
+      "id": 7,
+      "empresa": "Inviolável Toledo",
+      "matrizFilial": "Matriz",
+      "modelo": "rb3011",
+      "imagem": "/assets/img/rb3011.png",
+      "ip": "192.168.0.254",
+      "usuario": "admin",
+      "senha": "invi.5040@2"
+    }
+  ],
+  "empresas": [
+    {
+      "id": 1,
+      "razao": "Inviolável Maringá",
+      "matrizFilial": "Matriz",
+      "status": "false"
+    },
+    {
+      "id": 7,
+      "razao": "Inviolável Sapezal",
+      "matrizFilial": "Filial",
+      "status": false
+    },
+    {
+      "id": 8,
+      "razao": "Inviolável Itapejára",
+      "matrizFilial": "Filial",
+      "status": true
+    },
+    {
+      "id": 9,
+      "razao": "Max Cabo",
+      "matrizFilial": "Matriz",
+      "status": "true"
+    },
+    {
+      "id": 10,
+      "razao": "Invi Navirai",
+      "matrizFilial": "Filial",
+      "status": false
+    },
+    {
+      "id": 11,
+      "razao": "Invi Campo Grande",
+      "matrizFilial": "Matriz",
+      "status": "true"
+    },
+    {
+      "id": 12,
+      "razao": "Invi meu zovo",
+      "matrizFilial": "Matriz",
+      "status": "true"
+    },
+    {
+      "id": 13,
+      "razao": "Inviolável Astorga",
+      "matrizFilial": "Matriz",
+      "status": "true"
+    }
+  ]
+}

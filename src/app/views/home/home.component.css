@@ -1,50 +1,39 @@
-.home .title {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.2;
-    padding-left: 2px;
-}
+.p_on_cards {
+    width: 100%;
+    height: 550px;
+    /* border: 1px solid blue; */
+    flex-wrap: wrap;
+    /* padding: 5px 1px; */
+    /* padding: 5px; */
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    /* align-items: baseline; */
+    background-image: linear-gradient(160deg, #000000c2 0%, #00000075 100%);
+    border-radius: 5px;
+    overflow-y: auto;
+    position: relative;
 
-.home .subtitle {
-    font-size: 1.1em;
-    padding-left: 2px;
 }
 
 mat-card {
+    background-color: rgb(199, 164, 172);
+    padding: 5px;
+    margin: 3px;
     max-width: 300px;
-    margin-bottom: 8px;
-}
-
-div.container {
-    height: 100%;
-    background: -webkit-linear-gradient(top, #088fad 20%, #00d5ff 100%);
-}
-
-div.titulo {
-    font-size: 5vw;
-    background-color: blue;
     text-align: center;
-    padding: 3vw;
-    position: relative;
+    border-radius: 5px;
 }
 
-div.op1 {
-    width: 18%;
-    display: inline-block;
-    background-color: red;
-    font-size: 3vw;
-    text-align: center;
-    padding: 5vw 0vw 5vw 0vw;
-    min-width: 40vw;
+mat-card-title{
+    font-size: 17px;
 }
 
-div.op2 {
-    width: 18%;
-    background-color: green;
-    display: inline-block;
-    margin-right: 0vw;
-    font-size: 3vw;
-    text-align: center;
-    padding: 5vw 0vw 5vw 0vw;
-    min-width: 40vw;
+.usado {
+    color: rgb(152, 65, 65);
+}
+
+img {
+    padding-left: 10px;
+    width: 70px;
 }

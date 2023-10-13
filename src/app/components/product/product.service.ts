@@ -17,6 +17,7 @@ export class ProductService {
   baseUrlEquipamento = "http://localhost:3001/equipamentos";
   baseUrlEmpresa = "http://localhost:3001/empresas";
   centralIp = "http://172.16.233.170:3000/";
+  centralMaringa = "http://192.168.250.222:3000/";
 
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
@@ -68,11 +69,11 @@ export class ProductService {
   }
 
   readCentral(dados: any): Observable<any> {
-    // const httpOptions = {
-    //   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-    // }
-    return this.http.get(this.centralIp + dados).pipe(res => res)
-    
+    return this.http.get(this.centralIp + dados).pipe(res => res)    
+  }
+
+  readCentralMaringa(dados: any): Observable<any> {
+    return this.http.get(this.centralMaringa + dados).pipe(res => res)    
   }
   // -------------------------------- READ ID ------------------------------------
   // -------------------------------- READ ID ------------------------------------
